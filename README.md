@@ -1,6 +1,6 @@
-![image](https://github.com/patternizer/cussh-py/blob/main/figures/cussh-cities-logo.png)
-![image](https://github.com/patternizer/cussh-py/blob/main/figures/cussh-cities-map.png)
-![image](https://github.com/patternizer/cussh-py/blob/main/figures/tas_SSPs_with_historical_bias_adjusted-London.png)
+![image](https://github.com/patternizer/cussh-app/blob/main/figures/cussh-cities-logo.png)
+![image](https://github.com/patternizer/cussh-app/blob/main/figures/cussh-cities-map.png)
+![image](https://github.com/patternizer/cussh-app/blob/main/figures/tas_SSPs_with_historical_bias_adjusted-London.png)
 
 # cussh-app
 
