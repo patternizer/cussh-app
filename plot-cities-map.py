@@ -245,32 +245,31 @@ fig, ax = plt.subplots(figsize=(13.33,7.5), subplot_kw=dict(projection=p))
 borders = cf.NaturalEarthFeature(category='cultural', name='admin_0_boundary_lines_land', scale=resolution, facecolor='none', alpha=1)
 land = cf.NaturalEarthFeature('physical', 'land', scale=resolution, edgecolor='k', facecolor=cf.COLORS['land'])
 ocean = cf.NaturalEarthFeature('physical', 'ocean', scale=resolution, edgecolor='none', facecolor=cf.COLORS['water'])
-#lakes = cf.NaturalEarthFeature('physical', 'lakes', scale=resolution, edgecolor='b', facecolor=cf.COLORS['water'])
-#rivers = cf.NaturalEarthFeature('physical', 'rivers_lake_centerlines', scale=resolution, edgecolor='b', facecolor='none')
+lakes = cf.NaturalEarthFeature('physical', 'lakes', scale=resolution, edgecolor='b', facecolor=cf.COLORS['water'])
+rivers = cf.NaturalEarthFeature('physical', 'rivers_lake_centerlines', scale=resolution, edgecolor='b', facecolor='none')
          
 ax.set_global()  
 ax.add_feature(land, facecolor='grey', linestyle='-', linewidth=0.1, edgecolor='k', alpha=1, zorder=1)
 ax.add_feature(ocean, facecolor='lightgrey', alpha=1, zorder=2)
-#ax.add_feature(lakes)
-#ax.add_feature(rivers, linewidth=0.5)
-# ax.add_feature(borders, linestyle='-', linewidth=0.1, edgecolor='k', alpha=1, zorder=2)         
-# ax.coastlines(resolution=resolution, color='k', linestyle='-', linewidth=0.2, edgecolor='k', alpha=1, zorder=10)                                                                                  
+ax.add_feature(lakes)
+ax.add_feature(rivers, linewidth=0.5)
+ax.add_feature(borders, linestyle='-', linewidth=0.1, edgecolor='k', alpha=1, zorder=2)         
+ax.coastlines(resolution=resolution, color='k', linestyle='-', linewidth=0.2, edgecolor='k', alpha=1, zorder=10)                                                                                  
 
-#gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=False, linewidth=0.1, color='purple', alpha=1, linestyle='-', zorder=10)
-#gl.top_labels = False; gl.bottom_labels = False; gl.left_ylabels = False; gl.right_ylabels = False
-#gl.xlines = True; gl.ylines = True
-#gl.xlocator = mticker.FixedLocator(np.linspace(-180,180,73)) # every 5 degrees
-#gl.ylocator = mticker.FixedLocator(np.linspace(-90,90,37))   # every 5 degrees
-#gl.xformatter = LONGITUDE_FORMATTER; gl.yformatter = LATITUDE_FORMATTER
+gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=False, linewidth=0.1, color='purple', alpha=1, linestyle='-', zorder=10)
+gl.top_labels = False; gl.bottom_labels = False; gl.left_ylabels = False; gl.right_ylabels = False
+gl.xlines = True; gl.ylines = True
+gl.xlocator = mticker.FixedLocator(np.linspace(-180,180,73)) # every 5 degrees
+gl.ylocator = mticker.FixedLocator(np.linspace(-90,90,37))   # every 5 degrees
+gl.xformatter = LONGITUDE_FORMATTER; gl.yformatter = LATITUDE_FORMATTER
 
-plt.scatter(x=lons, y=lats, color="white", s=20, marker='o', edgecolor='k', lw=0.1, alpha=1, transform=ccrs.PlateCarree() )        
+plt.scatter(x=lons, y=lats, color="red", s=100, marker='o', edgecolor='k', lw=0.1, alpha=0.5, transform=ccrs.PlateCarree() )        
 ax.coastlines(resolution=resolution, color='k', linestyle='-', linewidth=0.2, edgecolor='k', alpha=1, zorder=1000)                                                                                  
 ax.add_feature(borders, linestyle='-', linewidth=0.1, edgecolor='k', alpha=1, zorder=2000)         
 fig.tight_layout()
 plt.savefig( figstr, dpi=dpi, bbox_inches='tight')
-#plt.savefig( figstr, dpi=dpi)
-#plt.clf()
-#plt.cla()
+plt.clf()
+plt.cla()
 plt.close()
 
 #------------------------------------------------------------------------------
