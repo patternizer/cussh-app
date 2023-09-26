@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CUSSH Cities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+p {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.button_link {
+  background-color: #777777;
+  color: white;
+  padding: 14px 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+<script>
+        function copyText(invar) {
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (invar);
+        }
+</script>
+<body>
+
+<div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="form-check">
+        <input type="radio" name="switch" value="option1" checked="checked">Dashboard (bias-correction) <br>
+        <input type="radio" name="switch" value="option2" onclick="window.location.href = 'dashboard-beta.html';">Dashboard (with HSI) <br><br>
+    </div>
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard-alpha.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">                
+                <a href="dashboard-alpha/kisumu.html">Kisumu</a>                
+                <a href="dashboard-alpha/nairobi.html">Nairobi</a>                
+                <a href="dashboard-alpha/homa.html">Homa Bay</a>                
+                <a href="dashboard-alpha/beijing.html">Beijing</a>                
+                <a href="dashboard-alpha/ningbo.html">Ningbo</a>                
+                <a href="dashboard-alpha/rennes.html">Rennes</a>                
+                <a href="dashboard-alpha/london.html">London</a>                
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <h1>CUSSH Cities Dashboard</h1>
+			<p>
+			The WHO generates a set of temperature and precipitation climate indicators based on ISIMIP CMIP6 model runs and observations from JRA-55 and GPCCD. The links below show these indicators for 7 CUSSH cities.
+			</p>
+			<p>
+			The dashboard has been created to support navigation of the data products produced by  
+			<a href="https://www.uea.ac.uk/web/groups-and-centres/climatic-research-unit/data">CRU/UEA</a> climate indicator datasets and reports.
+			</p>
+        </div>
+    </div>
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+		
+       <div class="w3-third">
+			<div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+				<p>
+                <figure id=burj>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 800" preserveAspectRatio="xMinYMin meet" >
+					<image width=100% xlink:href="dashboard-alpha/figures/cussh-cities-logo.png">
+					</image>
+					<a xlink:href="dashboard-alpha/kisumu.html">
+					  <polygon points="0,0 400,0 400,400 0,400" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="dashboard-alpha/nairobi.html">
+					  <polygon points="400,0 800,0 800,400 400,400" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="dashboard-alpha/ningbo.html">
+					  <polygon points="800,0 1200,0 1200,400 800,400" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="dashboard-alpha/homa.html">
+					  <polygon points="0,400 400,400 400,800 0,800" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="dashboard-alpha/beijing.html">
+					  <polygon points="400,400 800,400 800,800 400,800" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="dashboard-alpha/rennes.html">
+					  <polygon points="800,400 1200,400 1200,800 800,800" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="dashboard-alpha/london.html">
+					  <polygon points="1200,400 1600,400 1600,800 1200,800" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					</svg>
+				</figure>
+				</p>
+			</div>
+		</div>				
+		
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+				<p>
+                <figure id=burj>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 800" preserveAspectRatio="xMinYMin meet" >
+					<image width=100% xlink:href="dashboard-alpha/figures/cussh-cities-map.png">
+					</image>
+					</svg>
+				</figure>
+				</p>
+
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>NOTES</h1>
+            </div>
+        </div>
+    </div>
+
+   <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h2><a id="Processing">Processing</a></h2>
+				<br>
+                <h3>Bias-Adjustment</h3>
+                <p> Temperature variables from JRA-55 are used to adjust additively the historical and SSP1-2.6 and SSP3-7.0 model runs relative to the 1961-1990 climatological baseline. </p>
+                <p> Precipitation variables from GPCCD-FDD are used to adjust multiplicatively the historical and SSP1-2.6 and SSP3-7.0 model runs relative to the 1982-2016 climatological baseline. </p>
+                <p> Observational/reanalysis data is not yet available for the variables: fdETCCDI, gslETCCDI, idETCCDI, suETCCDI and trETCCDI, and hence no offset was applied. </p>
+                <p> Variables whose units are days are clipped to the valid range [0,365]. </p>
+                <h3>CMIP6 Variables</h3>
+                <p> For the yearly mean temperature (TAS), CMIP6 model runs and CRU-TS 3.26 observations were used to additatively bias-correct relative to the 1961-1990 climatological baseline. </p>
+                <p> For the yearly total precipitation (PRE), CMIP6 model runs and CRU-TS 3.26 observations were used to multiplicatively bias-correct relative to the 1982-2016 climatological baseline. </p>
+                <h3>Statistics</h3>
+                <p> In the CSV files that present the 30-yr average statistics as well as their difference from the 1981-2010 baseline, all values are provided to 2 d.p. </p>
+            </div>
+        </div>
+    </div>
+
+    <p> Page created on 2023-09-05 by Michael Taylor (CRU/UEA) using a mod of John Kennedy's climate indicator manager dashboard code: <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a> </p>
+
+</div>
+</body>
+</html>

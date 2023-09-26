@@ -1,6 +1,6 @@
-![image](https://github.com/patternizer/cussh-app/blob/main/figures/cussh-cities-logo.png)
-![image](https://github.com/patternizer/cussh-app/blob/main/figures/cussh-cities-map.png)
-![image](https://github.com/patternizer/cussh-app/blob/main/figures/tas_SSPs_with_historical_bias_adjusted-London.png)
+![image](https://github.com/patternizer/cussh-app/blob/main/dashboard-alpha/figures/cussh-cities-logo.png)
+![image](https://github.com/patternizer/cussh-app/blob/main/dashboard-alpha/figures/cussh-cities-map.png)
+![image](https://github.com/patternizer/cussh-app/blob/main/dashboard-alpha/figures/tas_SSPs_with_historical_bias_adjusted-London.png)
 
 # cussh-app
 
@@ -8,8 +8,9 @@ Python codebase for CUSSH project dashboard. The dashboard HTML code has been ad
 
 ## Contents
 
-* `dashboard.html` - html landing page and city selector
-* `[city].html` - html code displaying all variables and associated statistical tables for a selection of CUSSH cities [].
+* `dashboard-alpha.html` - html landing page and city selector for Dashboard (alpha) that shows comparisons between non-bias-adjusted and bias-adjusted ETCCDI variables.
+* `dashboard-beta.html` - html landing page and city selector for Dashboard (neta) that shows HSI Heat Index above threshold variables and bias-adjusted ETCCDI variables.
+* `dashboard-[alpha,beta]/[city].html` - html code displaying all variables and associated statistical tables for a selection of CUSSH cities.
 
 The first step is to clone the latest cussh-app code and step into the check out directory: 
 
@@ -20,7 +21,8 @@ The first step is to clone the latest cussh-app code and step into the check out
 
 The code was tested locally for the Firefox and Chrome browsers on a Linux box.
 
-    $ firefox dashboard.html
+    $ firefox dashboard-alpha.html (or)
+    $ firefox dashboard-beta.html
     
 Observations and projection source data extracted from C3S CDS are available on request.
 
